@@ -1,0 +1,3 @@
+{
+    "ts": "import { EventData } from \"@nativescript/core\";\nimport { ActionBar, NavigationButton } from \"@nativescript/core\";\nimport { Page } from \"@nativescript/core\";\n\nexport function onLoaded(args: EventData) {\n    const page = <Page>args.object;\n\n    const newActionBar = new ActionBar();\n    newActionBar.title = \"Code-Behind ActionBar\";\n    const newNavigaitonButton = new NavigationButton();\n    newNavigaitonButton.text = \"Go Back\";\n    newActionBar.navigationButton = newNavigaitonButton;\n\n    page.actionBar = newActionBar;\n    page.actionBarHidden = false;\n}"
+}
